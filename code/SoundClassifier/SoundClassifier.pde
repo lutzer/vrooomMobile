@@ -96,7 +96,7 @@ void setup() {
   //--------------------------------------------------------------------------------
   oscP5 = new OscP5(this, 12000);
   dest = new NetAddress("127.0.0.1", 6448);
-  destPy = new NetAddress("127.0.0.1", 6449);
+  //destPy = new NetAddress("127.0.0.1", 6449);
   destV4 = new NetAddress("172.16.1.18", 6448);
 
   //Minim setup for audio
