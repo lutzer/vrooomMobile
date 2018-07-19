@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
    <PATCH nodename="C:\vrooomMobile\code\VVVV\_MAIN.v4p" systemname="_MAIN_Test" filename="C:\_Audi_Hackathon\VVVV\03\_MAIN_Test.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1240" top="7890" width="25810" height="9990">
+   <BOUNDS type="Window" left="1360" top="7870" width="25810" height="9990">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -84,6 +84,8 @@
    <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Sampler State" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="41">
@@ -257,7 +259,7 @@
    </PIN>
    <PIN pinname="Priority 5" slicecount="1" values="7">
    </PIN>
-   <PIN pinname="Layer 6" visible="1">
+   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 9" visible="1" slicecount="1" values="||">
    </PIN>
@@ -339,7 +341,7 @@
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="61">
    <BOUNDS type="Node" left="9880" top="11410" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="5" values="-0.472,-0.236,0,0.236,0.472">
+   <PIN pinname="Input" visible="1" slicecount="5" values="-0.5108,-0.2554,0,0.2554,0.5108">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -545,7 +547,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="2" values="1,0" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="79">
@@ -897,9 +899,9 @@
    <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="115" dstpinname="Input 2">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="118">
-   <BOUNDS type="Node" left="17330" top="1450" width="100" height="100">
+   <BOUNDS type="Node" left="17360" top="1470" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="17330" top="1450" width="480" height="480">
+   <BOUNDS type="Box" left="17360" top="1470" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -958,16 +960,6 @@
    </LINK>
    <LINK srcnodeid="42" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 4">
    </LINK>
-   <NODE systemname="Background" filename="Subpatches\Background.v4p" nodename="Subpatches\Background.v4p" componentmode="Hidden" id="127">
-   <BOUNDS type="Node" left="3380" top="12550" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Ground Animation" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="13550" top="9190" width="11580" height="7620">
-   </BOUNDS>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="128">
    <BOUNDS type="Box" left="18140" top="5980" width="800" height="240">
    </BOUNDS>
@@ -1069,7 +1061,7 @@
    </PIN>
    <PIN pinname="Start" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="1240" top="7890" width="25810" height="9990">
+   <BOUNDS type="Window" left="1360" top="7870" width="25810" height="9990">
    </BOUNDS>
    <PIN pinname="Left" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1083,9 +1075,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="140">
-   <BOUNDS type="Box" left="1340" top="700" width="480" height="480">
+   <BOUNDS type="Box" left="1330" top="1000" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1340" top="700" width="0" height="0">
+   <BOUNDS type="Node" left="1330" top="1000" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -1630,40 +1622,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0.5">
    </PIN>
    </NODE>
-   <NODE systemname="CollectItems" filename="Subpatches\CollectItems.v4p" nodename="Subpatches\CollectItems.v4p" componentmode="Hidden" id="216">
-   <BOUNDS type="Node" left="16917" top="10683" width="2820" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11677" top="5503" width="10480" height="10360">
-   </BOUNDS>
-   <BOUNDS type="Window" left="10890" top="4260" width="15230" height="10360">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Z Drive / LFO Phase" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="LFO Change" visible="1">
-   </PIN>
-   <PIN pinname="Z Depth Street" visible="1">
-   </PIN>
-   <PIN pinname="Output 1" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="216" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 6">
-   </LINK>
-   <LINK srcnodeid="216" srcpinname="Output" dstnodeid="61" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="216" srcpinname="Layer 1" dstnodeid="25" dstpinname="Layer 7">
-   </LINK>
-   <LINK srcnodeid="216" srcpinname="Layer 2" dstnodeid="25" dstpinname="Layer 8">
-   </LINK>
-   <LINK srcnodeid="216" srcpinname="Output 2" dstnodeid="116" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Z Drive / LFO Phase">
-   </LINK>
-   <LINK srcnodeid="51" srcpinname="Change" dstnodeid="216" dstpinname="LFO Change">
-   </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="217">
    <BOUNDS type="Node" left="13870" top="3810" width="1130" height="270">
    </BOUNDS>
@@ -1758,8 +1716,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="222" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Z Depth Street">
-   </LINK>
    <LINK srcnodeid="222" srcpinname="Y Output Value" dstnodeid="141" dstpinname="Z Depth Street">
    </LINK>
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="141" dstpinname="Drive Z">
@@ -1777,8 +1733,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="223" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="223" srcpinname="Output" dstnodeid="127" dstpinname="Ground Animation">
    </LINK>
    <LINK srcnodeid="139" srcpinname="Left" dstnodeid="204" dstpinname="Input 1">
    </LINK>
@@ -2030,38 +1984,20 @@
    </LINK>
    <LINK srcnodeid="252" srcpinname="Output" dstnodeid="193" dstpinname="Set">
    </LINK>
-   <NODE systemname="Fog (EX9.RenderState)" nodename="Fog (EX9.RenderState)" componentmode="Hidden" id="262">
-   <BOUNDS type="Node" left="1470" top="10350" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Render State Out" visible="1">
-   </PIN>
-   <PIN pinname="Fog Color" slicecount="1" visible="1" values="|0.29349,0.29349,0.29349,1.00000|">
-   </PIN>
-   <PIN pinname="Pixel Fog Mode" slicecount="1" values="Exp">
-   </PIN>
-   <PIN pinname="Range To" slicecount="1" values="5">
-   </PIN>
-   <PIN pinname="Range From" slicecount="1" values="0.26">
-   </PIN>
-   </NODE>
    <NODE nodename="S (Node)" id="263">
    <BOUNDS type="Node" left="1480" top="10900" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="FogRenderState">
    </PIN>
    </NODE>
-   <LINK srcnodeid="262" srcpinname="Render State Out" dstnodeid="263" dstpinname="Input Value">
-   </LINK>
    <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="264">
-   <BOUNDS type="Node" left="2140" top="9740" width="100" height="100">
+   <BOUNDS type="Node" left="2130" top="9880" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="0.1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="264" srcpinname="Output" dstnodeid="262" dstpinname="Fog Color">
-   </LINK>
    <LINK srcnodeid="195" srcpinname="Input Value" dstnodeid="186" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="266">
@@ -2111,8 +2047,6 @@
    <LINK srcnodeid="268" srcpinname="Output" dstnodeid="267" dstpinname="Destination Maximum">
    </LINK>
    <LINK srcnodeid="236" srcpinname="Output" dstnodeid="268" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="127" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="118" srcpinname="Y Output Value" dstnodeid="237" dstpinname="Input 1">
    </LINK>
@@ -2256,8 +2190,74 @@
    </LINK>
    <LINK srcnodeid="284" srcpinname="Output" dstnodeid="112" dstpinname="Input 1">
    </LINK>
+   <LINK srcnodeid="241" srcpinname="Up Edge" dstnodeid="236" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="Fog (EX9.RenderState)" nodename="Fog (EX9.RenderState)" componentmode="Hidden" id="287">
+   <BOUNDS type="Node" left="1470" top="10350" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Range To" slicecount="1" values="1.59">
+   </PIN>
+   <PIN pinname="Enable RangeFog (Vertex Fog)" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Density (for modes Exp and Exp2)" slicecount="1" values="0.248">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="287" srcpinname="Render State Out" dstnodeid="263" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="264" srcpinname="Output" dstnodeid="287" dstpinname="Fog Color">
+   </LINK>
+   <LINK srcnodeid="287" srcpinname="Render State Out" dstnodeid="42" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="CollectItems" filename="Subpatches\CollectItems.v4p" nodename="CollectItems" componentmode="Hidden" id="216">
+   <BOUNDS type="Node" left="16917" top="10683" width="2820" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11677" top="5503" width="10480" height="10360">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10890" top="4260" width="15230" height="10360">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Z Drive / LFO Phase" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="LFO Change" visible="1">
+   </PIN>
+   <PIN pinname="Z Depth Street" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="216" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="216" srcpinname="Output" dstnodeid="61" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="216" srcpinname="Layer 1" dstnodeid="25" dstpinname="Layer 7">
+   </LINK>
+   <LINK srcnodeid="216" srcpinname="Layer 2" dstnodeid="25" dstpinname="Layer 8">
+   </LINK>
+   <LINK srcnodeid="216" srcpinname="Output 2" dstnodeid="116" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Z Drive / LFO Phase">
+   </LINK>
+   <LINK srcnodeid="51" srcpinname="Change" dstnodeid="216" dstpinname="LFO Change">
+   </LINK>
+   <LINK srcnodeid="222" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Z Depth Street">
+   </LINK>
    <LINK srcnodeid="216" srcpinname="Output 1" dstnodeid="78" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="241" srcpinname="Up Edge" dstnodeid="236" dstpinname="Reset">
+   <NODE systemname="Background" filename="Subpatches\Background.v4p" nodename="Background" componentmode="Hidden" id="127">
+   <BOUNDS type="Node" left="3380" top="12550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Ground Animation" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="13550" top="9190" width="11580" height="7620">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="223" srcpinname="Output" dstnodeid="127" dstpinname="Ground Animation">
+   </LINK>
+   <LINK srcnodeid="127" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 2">
    </LINK>
    </PATCH>
