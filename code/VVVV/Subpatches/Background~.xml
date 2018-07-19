@@ -35,7 +35,7 @@
    </PIN>
    <PIN pinname="Original Height" visible="1">
    </PIN>
-   <PIN pinname="Load In Background" slicecount="1" values="1">
+   <PIN pinname="Load In Background" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="7">
@@ -107,7 +107,9 @@
    </PIN>
    <PIN pinname="Original Height" visible="1">
    </PIN>
-   <PIN pinname="Load In Background" slicecount="1" values="1">
+   <PIN pinname="Load In Background" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Texture Out" dstnodeid="2" dstpinname="Texture In 2">
@@ -177,7 +179,7 @@
    </PIN>
    <PIN pinname="Original Height" visible="1">
    </PIN>
-   <PIN pinname="Load In Background" slicecount="1" values="1">
+   <PIN pinname="Load In Background" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="20">
@@ -265,7 +267,7 @@
    </PIN>
    <PIN pinname="Original Height" visible="1">
    </PIN>
-   <PIN pinname="Load In Background" slicecount="1" values="1">
+   <PIN pinname="Load In Background" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="15" srcpinname="Texture Out" dstnodeid="16" dstpinname="Texture In 2">
