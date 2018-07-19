@@ -22,10 +22,31 @@
 * 4 Acceleration: 220 samples per person
 * 5 Breaking: 110 samples per person
 
-### Set2
+### Set2 (Master1: Adaboost)
 
 * +3 Starting: 110 samples per person
 
 ### Set3
 
 ![settings-set3](/Users/lutz/Projects/vrooomMobile/settings-set3.png)
+
+
+
+### Set5
+
+![settings](/Users/lutz/Projects/vrooomMobile/settings-set1+2.png)
+
+
+
+* start from set2 adaboost +
+
+  * 5 braking + starting per person
+  * 3 acceleration per person
+
+* works with all of the team
+
+  
+
+### set&
+
+* start from set5 + a few other persons

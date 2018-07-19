@@ -28,5 +28,12 @@ void sliderSetup() {
     .setRange(0, 800)
     .setValue(800)
     ;  
+    
+   //cp5.addSlider("threshold")
+   // .setPosition(graphStartX +300, margin*2.5)
+   // .setSize(100, 20)
+   // .setRange(0, 2.0)
+   // .setValue(1.0)
+   // ; 
 
 }

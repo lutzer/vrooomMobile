@@ -9,6 +9,7 @@ void sendOsc(color[] px) {
     msg.add(float(px[i]));
   }
   oscP5.send(msg, dest);
+  oscP5.send(msg, destPy);
 }
 
 //--------------------------------------------------------------------------------

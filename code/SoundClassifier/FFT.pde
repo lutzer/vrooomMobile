@@ -7,11 +7,15 @@ void soundAnalyse() {
   //--------------------------------------------------------------------------------
   //freqCut makes it possible to select a hz range to analyze in the sketch
   binSize = fft.specSize() - freqCut; // raw signal / full spectrum
+  
+  float average = fft.calcAvg(0,8000);
 
   //--------------------------------------------------------------------------------
   //Go through all the bands in the fft analyse. 
   for (int i = 0; i < binSize; i++)
   {
+    
+    
 
     //--------------------------------------------------------------------------------
     //VLoc is controlling where on the Y-axe the reading sould be placed. 
@@ -33,6 +37,7 @@ void soundAnalyse() {
     //--------------------------------------------------------------------------------
     //create a newvalue for the amplite, which lets the cutOff value decide
     //how much of the background noise we want
+    
     newValue = (int)Math.max(0, (value - map(value, 0, maxValue, cutOff, 0)));
 
     //--------------------------------------------------------------------------------
