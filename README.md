@@ -6,7 +6,7 @@
 
 * Mic gain: 48db
 
-  
+
 
 
 
@@ -14,7 +14,7 @@
 
 ### Set1
 
-![settings](/Users/lutz/Projects/vrooomMobile/settings-set1+2.png)
+![settings](settings-set1+2.png)
 
 * 1 background noise 440
 * 2 Talking randomly 440
@@ -28,13 +28,13 @@
 
 ### Set3
 
-![settings-set3](/Users/lutz/Projects/vrooomMobile/settings-set3.png)
+![settings-set3](settings-set3.png)
 
 
 
 ### Set5
 
-![settings](/Users/lutz/Projects/vrooomMobile/settings-set1+2.png)
+![settings](settings-set1+2.png)
 
 
 
@@ -45,7 +45,7 @@
 
 * works with all of the team
 
-  
+
 
 ### set&
 
