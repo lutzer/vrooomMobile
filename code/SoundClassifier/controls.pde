@@ -5,7 +5,7 @@ void sliderSetup() {
     .setPosition(graphStartX, margin*1)
     .setSize(100, 20)
     .setRange(0, 1000)
-    .setValue(250)
+    .setValue(500)
     ;    
     
   cp5.addSlider("maxValue")
