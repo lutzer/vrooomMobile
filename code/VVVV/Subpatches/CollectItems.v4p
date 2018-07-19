@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\_Audi_Hackathon\VVVV\03\Subpatches\CollectItems.v4p" scrollx="3840" scrolly="0" systemname="CollectItems" filename="C:\_Audi_Hackathon\VVVV\03\Subpatches\CollectItems.v4p">
+   <PATCH nodename="C:\_Audi_Hackathon\VVVV\03\Subpatches\CollectItems.v4p" scrollx="2050" scrolly="0" systemname="CollectItems" filename="C:\_Audi_Hackathon\VVVV\03\Subpatches\CollectItems.v4p">
    <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="12900" top="4810" width="100" height="100">
    </BOUNDS>
@@ -255,7 +255,7 @@
    </PIN>
    <PIN pinname="Enabled" visible="1" slicecount="1" pintype="Input" values="0">
    </PIN>
-   <PIN pinname="Prevent from doubles" slicecount="1" pintype="Input" visible="1" values="5">
+   <PIN pinname="Prevent from doubles" slicecount="1" pintype="Input" visible="1" values="1">
    </PIN>
    <PIN pinname="Is Integer" slicecount="1" pintype="Input" visible="1" values="1">
    </PIN>
@@ -275,7 +275,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="|..\Assets\tokens\burrito\01_burrito .png|">
+   <PIN pinname="Filename" slicecount="1" visible="1" values="|..\Assets\tokens\burrito\01_burrito .png|">
    </PIN>
    </NODE>
    <NODE id="12" systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden">
@@ -367,7 +367,7 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
-   <PIN pinname="Prevent from doubles" slicecount="1" values="5">
+   <PIN pinname="Prevent from doubles" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Is Integer" slicecount="1" values="1">
    </PIN>
@@ -679,11 +679,15 @@
    </PIN>
    </NODE>
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="2690" top="5980" width="100" height="100">
+   <BOUNDS type="Node" left="5540" top="5810" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Mask" slicecount="1" values="*.png">
+   <PIN pinname="Mask" slicecount="1" values="*.*">
    </PIN>
-   <PIN pinname="Directory" slicecount="1" values="Assets\tokens">
+   <PIN pinname="Directory" slicecount="1" values="..\Assets\all_tokens">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
@@ -715,7 +719,7 @@
    <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="36">
    <BOUNDS type="Node" left="7020" top="8250" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Alpha" slicecount="1" values="0.33">
+   <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -729,6 +733,8 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="0.85">
+   </PIN>
    </NODE>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="38">
    <BOUNDS type="Node" left="5710" top="7660" width="100" height="100">
@@ -739,7 +745,7 @@
    </PIN>
    <PIN pinname="Y" slicecount="1" values="-0.188">
    </PIN>
-   <PIN pinname="Z" slicecount="1" values="0.019">
+   <PIN pinname="Z" slicecount="1" values="0.19">
    </PIN>
    </NODE>
    <NODE id="39" systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden">
@@ -859,6 +865,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8750" top="510" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Enabled">
    </LINK>
@@ -954,7 +962,7 @@
    </LINK>
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Enabled">
    </LINK>
-   <BOUNDS type="Window" left="10550" top="4230" width="12910" height="10360">
+   <BOUNDS type="Window" left="10890" top="4260" width="12910" height="10360">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -977,13 +985,51 @@
    </PIN>
    <PIN pinname="Priority 2" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Priority 4" slicecount="1" values="-1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="51" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="51" srcpinname="Layer" dstnodeid="43" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="52">
-   <BOUNDS type="Node" left="5810" top="6370" width="100" height="100">
+   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="6470" top="6230" width="100" height="100">
    </BOUNDS>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Is Integer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="54">
+   <BOUNDS type="Node" left="5820" top="6920" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="54" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Filenames" dstnodeid="54" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="11" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="Blend (EX9.RenderState)" filename="" nodename="Blend (EX9.RenderState)" componentmode="Hidden" id="55">
+   <BOUNDS type="Node" left="940" top="7570" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="Draw Mode" slicecount="1" values="Multiply">
+   </PIN>
    </NODE>
    </PATCH>

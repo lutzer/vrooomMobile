@@ -41,6 +41,8 @@
    </PIN>
    <PIN pinname="Filename" slicecount="1" visible="1" values="..\Assets\TREES\002_tree.png">
    </PIN>
+   <PIN pinname="Load In Background" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE id="22" systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden">
    <BOUNDS type="Node" left="1300" top="9790" width="100" height="100">
@@ -297,6 +299,8 @@
    </PIN>
    <PIN pinname="Filename" slicecount="1" visible="1" values="..\Assets\TREES\002_tree.png">
    </PIN>
+   <PIN pinname="Load In Background" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE id="51" systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden">
    <BOUNDS type="Node" left="7190" top="9240" width="100" height="100">
@@ -315,7 +319,7 @@
    </PIN>
    </NODE>
    <NODE id="50" systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden">
-   <BOUNDS type="Node" left="6980" top="7230" width="100" height="100">
+   <BOUNDS type="Node" left="7020" top="7410" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XYZ" slicecount="1" values="0.63">
    </PIN>
@@ -329,7 +333,7 @@
    </BOUNDS>
    <PIN pinname="Transform In" slicecount="1" visible="1" values="||">
    </PIN>
-   <PIN pinname="Y" slicecount="1" visible="1" values="0.43">
+   <PIN pinname="Y" slicecount="1" visible="1" values="0.41">
    </PIN>
    <PIN pinname="Z" visible="1" slicecount="3" values="-0.133333333333334,-1.8,-3.46666666666667">
    </PIN>
@@ -399,8 +403,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="48" srcpinname="Output" dstnodeid="45" dstpinname="Destination Maximum">
-   </LINK>
-   <LINK srcnodeid="49" srcpinname="Transform Out" dstnodeid="50" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="50" srcpinname="Transform Out" dstnodeid="51" dstpinname="Transform">
    </LINK>
@@ -1005,5 +1007,21 @@
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="80" srcpinname="Position Out" dstnodeid="81" dstpinname="Alpha">
+   </LINK>
+   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="120">
+   <BOUNDS type="Node" left="7090" top="6900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="0.066">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Transform Out" dstnodeid="120" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="120" srcpinname="Transform Out" dstnodeid="50" dstpinname="Transform In">
    </LINK>
    </PATCH>
