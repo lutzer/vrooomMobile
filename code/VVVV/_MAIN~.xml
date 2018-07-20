@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\vrooomMobile\code\VVVV\_MAIN.v4p" systemname="_MAIN_Test" filename="C:\_Audi_Hackathon\VVVV\03\_MAIN_Test.v4p" scrollx="360" scrolly="600">
-   <BOUNDS type="Window" left="1250" top="7140" width="25810" height="9990">
+   <PATCH nodename="C:\vrooomMobile\code\VVVV\_MAIN.v4p" systemname="_MAIN_Test" filename="C:\_Audi_Hackathon\VVVV\03\_MAIN_Test.v4p" scrollx="1550" scrolly="430">
+   <BOUNDS type="Window" left="1510" top="6920" width="25810" height="9990">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2740" top="20960" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="1090" top="1270" width="14890" height="6410">
+   <BOUNDS type="Window" left="1110" top="1080" width="24380" height="10320">
    </BOUNDS>
    <PIN pinname="Background Color" slicecount="1" values="|0.37910,0.37910,0.37910,1.00000|">
    </PIN>
@@ -977,7 +977,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="18140" top="5980" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1000">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="45">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1073,7 +1073,7 @@
    </PIN>
    <PIN pinname="Start" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="1250" top="7140" width="25810" height="9990">
+   <BOUNDS type="Window" left="1510" top="6920" width="25810" height="9990">
    </BOUNDS>
    <PIN pinname="Left" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1108,12 +1108,12 @@
    </NODE>
    <LINK srcnodeid="140" srcpinname="Y Output Value" dstnodeid="139" dstpinname="ON / OFF OSC">
    </LINK>
-   <NODE systemname="Environment" filename="Subpatches\Environment.v4p" componentmode="Hidden" id="141" nodename="Subpatches\Environment.v4p">
+   <NODE systemname="Environment" filename="Subpatches\Environment.v4p" componentmode="InAWindow" id="141" nodename="Subpatches\Environment.v4p">
    <BOUNDS type="Node" left="5620" top="13940" width="2720" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5620" top="13940" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="14990" top="7340" width="14550" height="10060">
+   <BOUNDS type="Window" left="7850" top="5450" width="16320" height="11320">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -1331,7 +1331,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5770" top="24600" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="1090" top="1270" width="14890" height="6410">
+   <BOUNDS type="Window" left="1110" top="1080" width="24380" height="10320">
    </BOUNDS>
    <PIN pinname="Background Color" slicecount="1" values="|0.37910,0.37910,0.37910,1.00000|">
    </PIN>
@@ -1677,7 +1677,7 @@
    </PIN>
    <PIN pinname="Input 2" slicecount="1" visible="1" values="4">
    </PIN>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="217" dstpinname="Input 1">
@@ -1765,8 +1765,6 @@
    <LINK srcnodeid="222" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Z Depth Street">
    </LINK>
    <LINK srcnodeid="222" srcpinname="Y Output Value" dstnodeid="141" dstpinname="Z Depth Street">
-   </LINK>
-   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="141" dstpinname="Drive Z">
    </LINK>
    <LINK srcnodeid="51" srcpinname="Output" dstnodeid="47" dstpinname="Y Input Value">
    </LINK>
@@ -2079,6 +2077,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
    </NODE>
    <LINK srcnodeid="266" srcpinname="Output" dstnodeid="267" dstpinname="Input">
    </LINK>
@@ -2163,8 +2163,6 @@
    <LINK srcnodeid="266" srcpinname="Output" dstnodeid="278" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="278" srcpinname="Last Slice" dstnodeid="51" dstpinname="Period">
-   </LINK>
-   <LINK srcnodeid="139" srcpinname="Accelerate" dstnodeid="217" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="139" srcpinname="Speed" dstnodeid="205" dstpinname="Y Input Value">
    <LINKPOINT x="15155" y="1570">
@@ -2261,5 +2259,9 @@
    <LINK srcnodeid="287" srcpinname="Render State Out" dstnodeid="42" dstpinname="Render State">
    </LINK>
    <LINK srcnodeid="241" srcpinname="Up Edge" dstnodeid="236" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="139" srcpinname="Accelerate" dstnodeid="217" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="141" dstpinname="Drive Z">
    </LINK>
    </PATCH>
