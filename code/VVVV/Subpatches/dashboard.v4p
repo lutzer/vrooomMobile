@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\_Audi_Hackathon\VVVV\03\Subpatches\dashboard.v4p" scrollx="0" scrolly="0" systemname="dashboard" filename="C:\Users\Fernando Visockis\Desktop\dashboard.v4p">
-   <BOUNDS type="Window" left="4940" top="6900" width="19400" height="12500">
+   <PATCH nodename="C:\vrooomMobile\code\VVVV\Subpatches\dashboard.v4p" scrollx="8280" scrolly="20" systemname="dashboard" filename="C:\Users\Fernando Visockis\Desktop\dashboard.v4p">
+   <BOUNDS type="Window" left="5690" top="6640" width="19400" height="12500">
    </BOUNDS>
    <NODE systemname="Player (EX9.Texture Timebased)" filename="%VVVV%\lib\nodes\modules\EX9.Texture\Player (EX9.Texture Timebased).v4p" nodename="Player (EX9.Texture Timebased)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3914" top="3328" width="100" height="100">
@@ -1289,7 +1289,7 @@
    </PIN>
    <PIN pinname="Reset" visible="1">
    </PIN>
-   <PIN pinname="Up" visible="1">
+   <PIN pinname="Up" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="170">
@@ -2049,7 +2049,7 @@
    <LINK srcnodeid="216" srcpinname="Up Edge" dstnodeid="220" dstpinname="Set">
    </LINK>
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="221">
-   <BOUNDS type="Node" left="11890" top="1390" width="100" height="100">
+   <BOUNDS type="Node" left="12430" top="1350" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Decay" slicecount="1" values="0.5">
    </PIN>
@@ -2063,12 +2063,10 @@
    </PIN>
    <PIN pinname="FilterTime" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Cyclic" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="197" srcpinname="Y Output Value" dstnodeid="221" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="221" srcpinname="Position Out" dstnodeid="196" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="221" srcpinname="Position Out" dstnodeid="32" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="197" srcpinname="Y Output Value" dstnodeid="221" dstpinname="Go To Position">
    </LINK>
@@ -2089,8 +2087,6 @@
    <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="222" srcpinname="Output" dstnodeid="36" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="170" srcpinname="OnChange" dstnodeid="171" dstpinname="Up">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="223">
    <BOUNDS type="Node" left="26980" top="950" width="100" height="100">
@@ -2141,5 +2137,25 @@
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="226" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="226" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Random Seed">
+   </LINK>
+   <LINK srcnodeid="170" srcpinname="OnChange" dstnodeid="171" dstpinname="Down">
+   </LINK>
+   <NODE systemname="Decay (Animation)" nodename="Decay (Animation)" componentmode="Hidden" id="228">
+   <BOUNDS type="Node" left="11880" top="1770" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Decay" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Attack" slicecount="1" values="0.1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="197" srcpinname="Y Output Value" dstnodeid="228" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="228" srcpinname="Output" dstnodeid="196" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="228" srcpinname="Output" dstnodeid="32" dstpinname="Input 1">
    </LINK>
    </PATCH>

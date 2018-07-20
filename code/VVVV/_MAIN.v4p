@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
    <PATCH nodename="C:\vrooomMobile\code\VVVV\_MAIN.v4p" systemname="_MAIN_Test" filename="C:\_Audi_Hackathon\VVVV\03\_MAIN_Test.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1360" top="7870" width="25810" height="9990">
+   <BOUNDS type="Window" left="1600" top="6740" width="25810" height="9990">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -259,7 +259,7 @@
    </PIN>
    <PIN pinname="Priority 5" slicecount="1" values="7">
    </PIN>
-   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
+   <PIN pinname="Layer 6" visible="1">
    </PIN>
    <PIN pinname="Layer 9" visible="1" slicecount="1" values="||">
    </PIN>
@@ -341,7 +341,7 @@
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="61">
    <BOUNDS type="Node" left="9880" top="11410" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="5" values="-0.5108,-0.2554,0,0.2554,0.5108">
+   <PIN pinname="Input" visible="1" slicecount="5" values="-0.472,-0.236,0,0.236,0.472">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -363,17 +363,19 @@
    <LINK srcnodeid="62" srcpinname="Position Out" dstnodeid="27" dstpinname="X">
    </LINK>
    <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="63">
-   <BOUNDS type="Node" left="8890" top="2350" width="100" height="100">
+   <BOUNDS type="Node" left="8870" top="2180" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8890" top="2350" width="2000" height="2000">
+   <BOUNDS type="Box" left="8870" top="2180" width="2000" height="2000">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
+   <PIN pinname="Queue Mode" slicecount="1" values="Enqueue">
+   </PIN>
    </NODE>
    <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="8900" top="2830" width="1100" height="270">
+   <BOUNDS type="Node" left="8880" top="2660" width="1100" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="8900" top="2830" width="2000" height="2000">
+   <BOUNDS type="Box" left="8880" top="2660" width="2000" height="2000">
    </BOUNDS>
    <PIN pinname="Key Match" slicecount="1" values="|Left, Right, R|">
    </PIN>
@@ -547,7 +549,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="1,0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="79">
@@ -960,6 +962,16 @@
    </LINK>
    <LINK srcnodeid="42" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 4">
    </LINK>
+   <NODE systemname="Background" filename="Subpatches\Background.v4p" nodename="Subpatches\Background.v4p" componentmode="Hidden" id="127">
+   <BOUNDS type="Node" left="3380" top="12550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Ground Animation" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="13550" top="9190" width="11580" height="7620">
+   </BOUNDS>
+   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="128">
    <BOUNDS type="Box" left="18140" top="5980" width="800" height="240">
    </BOUNDS>
@@ -1061,13 +1073,13 @@
    </PIN>
    <PIN pinname="Start" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="1360" top="7870" width="25810" height="9990">
+   <BOUNDS type="Window" left="1600" top="6740" width="25810" height="9990">
    </BOUNDS>
    <PIN pinname="Left" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Right" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Speed" visible="1">
+   <PIN pinname="Speed" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Break" visible="1">
    </PIN>
@@ -1075,9 +1087,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="140">
-   <BOUNDS type="Box" left="1330" top="1000" width="480" height="480">
+   <BOUNDS type="Box" left="1320" top="950" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1330" top="1000" width="0" height="0">
+   <BOUNDS type="Node" left="1320" top="950" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -1277,7 +1289,7 @@
    </PIN>
    <PIN pinname="TranslateY" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="4940" top="6900" width="19400" height="12500">
+   <BOUNDS type="Window" left="5690" top="6640" width="19400" height="12500">
    </BOUNDS>
    <PIN pinname="ScaleX - ScaleY" slicecount="1" values="1.87">
    </PIN>
@@ -1622,6 +1634,40 @@
    <PIN pinname="X Input Value" slicecount="1" values="0.5">
    </PIN>
    </NODE>
+   <NODE systemname="CollectItems" filename="Subpatches\CollectItems.v4p" nodename="Subpatches\CollectItems.v4p" componentmode="Hidden" id="216">
+   <BOUNDS type="Node" left="16917" top="10683" width="2820" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11677" top="5503" width="10480" height="10360">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10890" top="4260" width="15230" height="10360">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Z Drive / LFO Phase" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="LFO Change" visible="1">
+   </PIN>
+   <PIN pinname="Z Depth Street" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="216" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="216" srcpinname="Output" dstnodeid="61" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="216" srcpinname="Layer 1" dstnodeid="25" dstpinname="Layer 7">
+   </LINK>
+   <LINK srcnodeid="216" srcpinname="Layer 2" dstnodeid="25" dstpinname="Layer 8">
+   </LINK>
+   <LINK srcnodeid="216" srcpinname="Output 2" dstnodeid="116" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Z Drive / LFO Phase">
+   </LINK>
+   <LINK srcnodeid="51" srcpinname="Change" dstnodeid="216" dstpinname="LFO Change">
+   </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="217">
    <BOUNDS type="Node" left="13870" top="3810" width="1130" height="270">
    </BOUNDS>
@@ -1631,7 +1677,7 @@
    </PIN>
    <PIN pinname="Input 2" slicecount="1" visible="1" values="4">
    </PIN>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="217" dstpinname="Input 1">
@@ -1716,6 +1762,8 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
+   <LINK srcnodeid="222" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Z Depth Street">
+   </LINK>
    <LINK srcnodeid="222" srcpinname="Y Output Value" dstnodeid="141" dstpinname="Z Depth Street">
    </LINK>
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="141" dstpinname="Drive Z">
@@ -1733,6 +1781,8 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="223" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="223" srcpinname="Output" dstnodeid="127" dstpinname="Ground Animation">
    </LINK>
    <LINK srcnodeid="139" srcpinname="Left" dstnodeid="204" dstpinname="Input 1">
    </LINK>
@@ -2029,6 +2079,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
    </NODE>
    <LINK srcnodeid="266" srcpinname="Output" dstnodeid="267" dstpinname="Input">
    </LINK>
@@ -2047,6 +2099,8 @@
    <LINK srcnodeid="268" srcpinname="Output" dstnodeid="267" dstpinname="Destination Maximum">
    </LINK>
    <LINK srcnodeid="236" srcpinname="Output" dstnodeid="268" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="127" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="118" srcpinname="Y Output Value" dstnodeid="237" dstpinname="Input 1">
    </LINK>
@@ -2111,8 +2165,6 @@
    <LINK srcnodeid="266" srcpinname="Output" dstnodeid="278" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="278" srcpinname="Last Slice" dstnodeid="51" dstpinname="Period">
-   </LINK>
-   <LINK srcnodeid="139" srcpinname="Accelerate" dstnodeid="217" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="139" srcpinname="Speed" dstnodeid="205" dstpinname="Y Input Value">
    <LINKPOINT x="15155" y="1570">
@@ -2190,7 +2242,7 @@
    </LINK>
    <LINK srcnodeid="284" srcpinname="Output" dstnodeid="112" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="241" srcpinname="Up Edge" dstnodeid="236" dstpinname="Reset">
+   <LINK srcnodeid="216" srcpinname="Output 1" dstnodeid="78" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Fog (EX9.RenderState)" nodename="Fog (EX9.RenderState)" componentmode="Hidden" id="287">
    <BOUNDS type="Node" left="1470" top="10350" width="100" height="100">
@@ -2208,56 +2260,8 @@
    </LINK>
    <LINK srcnodeid="287" srcpinname="Render State Out" dstnodeid="42" dstpinname="Render State">
    </LINK>
-   <NODE systemname="CollectItems" filename="Subpatches\CollectItems.v4p" nodename="CollectItems" componentmode="Hidden" id="216">
-   <BOUNDS type="Node" left="16917" top="10683" width="2820" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11677" top="5503" width="10480" height="10360">
-   </BOUNDS>
-   <BOUNDS type="Window" left="10890" top="4260" width="15230" height="10360">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Z Drive / LFO Phase" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="LFO Change" visible="1">
-   </PIN>
-   <PIN pinname="Z Depth Street" visible="1">
-   </PIN>
-   <PIN pinname="Output 1" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="216" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 6">
+   <LINK srcnodeid="241" srcpinname="Up Edge" dstnodeid="236" dstpinname="Reset">
    </LINK>
-   <LINK srcnodeid="216" srcpinname="Output" dstnodeid="61" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="216" srcpinname="Layer 1" dstnodeid="25" dstpinname="Layer 7">
-   </LINK>
-   <LINK srcnodeid="216" srcpinname="Layer 2" dstnodeid="25" dstpinname="Layer 8">
-   </LINK>
-   <LINK srcnodeid="216" srcpinname="Output 2" dstnodeid="116" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Z Drive / LFO Phase">
-   </LINK>
-   <LINK srcnodeid="51" srcpinname="Change" dstnodeid="216" dstpinname="LFO Change">
-   </LINK>
-   <LINK srcnodeid="222" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Z Depth Street">
-   </LINK>
-   <LINK srcnodeid="216" srcpinname="Output 1" dstnodeid="78" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="Background" filename="Subpatches\Background.v4p" nodename="Background" componentmode="Hidden" id="127">
-   <BOUNDS type="Node" left="3380" top="12550" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Ground Animation" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="13550" top="9190" width="11580" height="7620">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="223" srcpinname="Output" dstnodeid="127" dstpinname="Ground Animation">
-   </LINK>
-   <LINK srcnodeid="127" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 2">
+   <LINK srcnodeid="139" srcpinname="Accelerate" dstnodeid="217" dstpinname="Switch">
    </LINK>
    </PATCH>

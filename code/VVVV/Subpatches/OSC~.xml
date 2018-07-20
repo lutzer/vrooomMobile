@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\vrooomMobile\code\VVVV\Subpatches\OSC.v4p" systemname="OSC" filename="C:\_Audi_Hackathon\VVVV\03\Subpatches\OSC.v4p" scrollx="500" scrolly="8280">
-   <BOUNDS type="Window" left="780" top="8060" width="25810" height="9990">
+   <PATCH nodename="C:\vrooomMobile\code\VVVV\Subpatches\OSC.v4p" systemname="OSC" filename="C:\_Audi_Hackathon\VVVV\03\Subpatches\OSC.v4p" scrollx="0" scrolly="9880">
+   <BOUNDS type="Window" left="1250" top="7140" width="25810" height="9990">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -269,9 +269,9 @@
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="30" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
-   <BOUNDS type="Box" left="6830" top="9360" width="480" height="480">
+   <BOUNDS type="Box" left="6980" top="9200" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6830" top="9360" width="0" height="0">
+   <BOUNDS type="Node" left="6980" top="9200" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -287,9 +287,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="40">
-   <BOUNDS type="Box" left="8320" top="9390" width="480" height="480">
+   <BOUNDS type="Box" left="8410" top="9160" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8320" top="9390" width="0" height="0">
+   <BOUNDS type="Node" left="8410" top="9160" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -331,9 +331,9 @@
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="42" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43">
-   <BOUNDS type="Box" left="9580" top="9010" width="480" height="480">
+   <BOUNDS type="Box" left="9680" top="9260" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="9580" top="9010" width="0" height="0">
+   <BOUNDS type="Node" left="9680" top="9260" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1047,7 +1047,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OneEuroFilter (Animation)" nodename="OneEuroFilter (Animation)" componentmode="Hidden" id="140" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
-   <BOUNDS type="Node" left="11490" top="12040" width="100" height="100">
+   <BOUNDS type="Node" left="11670" top="11810" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1059,9 +1059,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="141">
-   <BOUNDS type="Box" left="12550" top="11510" width="800" height="240">
+   <BOUNDS type="Box" left="12730" top="11280" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="12550" top="11510" width="0" height="0">
+   <BOUNDS type="Node" left="12730" top="11280" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.61">
    </PIN>
@@ -1137,7 +1137,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Speed">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="2.54145237034744E-297">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
@@ -1416,8 +1416,6 @@
    <PIN pinname="Last Slice" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="180" srcpinname="Last Slice" dstnodeid="150" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="CDR (Spreads)" nodename="CDR (Spreads)" componentmode="Hidden" id="182">
    <BOUNDS type="Node" left="12460" top="7050" width="100" height="100">
    </BOUNDS>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\vrooomMobile\code\VVVV\Subpatches\OSC.v4p" systemname="OSC" filename="C:\_Audi_Hackathon\VVVV\03\Subpatches\OSC.v4p" scrollx="0" scrolly="7510">
-   <BOUNDS type="Window" left="780" top="8060" width="25810" height="9990">
+   <PATCH nodename="C:\vrooomMobile\code\VVVV\Subpatches\OSC.v4p" systemname="OSC" filename="C:\_Audi_Hackathon\VVVV\03\Subpatches\OSC.v4p" scrollx="10" scrolly="10230">
+   <BOUNDS type="Window" left="1600" top="6740" width="25810" height="9990">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -1137,7 +1137,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Speed">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="2.54145237034744E-297">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0.294468372361735">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
@@ -1409,15 +1409,13 @@
    <LINK srcnodeid="94" srcpinname="Output" dstnodeid="140" dstpinname="Input">
    </LINK>
    <NODE systemname="CDR (Spreads)" nodename="CDR (Spreads)" componentmode="Hidden" id="180">
-   <BOUNDS type="Node" left="11810" top="16350" width="100" height="100">
+   <BOUNDS type="Node" left="11560" top="15910" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Last Slice" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="180" srcpinname="Last Slice" dstnodeid="150" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="CDR (Spreads)" nodename="CDR (Spreads)" componentmode="Hidden" id="182">
    <BOUNDS type="Node" left="12460" top="7050" width="100" height="100">
    </BOUNDS>
@@ -1479,5 +1477,7 @@
    <LINK srcnodeid="187" srcpinname="Up Edge" dstnodeid="40" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="140" srcpinname="Output" dstnodeid="180" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="180" srcpinname="Last Slice" dstnodeid="150" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

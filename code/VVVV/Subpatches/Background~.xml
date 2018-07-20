@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\_Audi_Hackathon\VVVV\03\Subpatches\Background.v4p" systemname="Background" filename="C:\_Audi_Hackathon\VVVV\03\Subpatches\Background.v4p" scrollx="240" scrolly="0">
+   <PATCH nodename="C:\vrooomMobile\code\VVVV\Subpatches\Background.v4p" systemname="Background" filename="C:\_Audi_Hackathon\VVVV\03\Subpatches\Background.v4p" scrollx="240" scrolly="0">
    <BOUNDS type="Window" left="13550" top="9190" width="11580" height="7620">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -361,7 +361,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Y" slicecount="1" values="-0.205">
+   <PIN pinname="Y" slicecount="1" values="-0.19">
    </PIN>
    </NODE>
    <LINK srcnodeid="29" srcpinname="Transform Out" dstnodeid="9" dstpinname="Texture Transform">
